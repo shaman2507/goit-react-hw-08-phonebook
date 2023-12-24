@@ -6,7 +6,7 @@ import {
   createContactsThunk,
   getAllContactsThunk,
 } from 'store/contactsSlice/operationsContacts';
-import { createContacts } from 'store/contactsSlice/contactsSlice';
+import { createContacts } from 'store/contactsSlice/contactSlice';
 import { selectAuth } from 'store/auth/selectors';
 
 const ContactForm = () => {
