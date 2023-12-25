@@ -1,6 +1,5 @@
 import axios from "axios";
-
-const { createAsyncThunk } = require("@reduxjs/toolkit");
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
@@ -12,8 +11,6 @@ export const token = {
         },
    
 };
-
-
 
 export const registerThunk= createAsyncThunk('auth/signUp',async body =>{
     try {
@@ -33,7 +30,7 @@ export const loginThunk= createAsyncThunk('auth/logined',async body =>{
     } catch (error) {
         return error
     }
-    })
+})
 
 
 export const logOutThunk = createAsyncThunk('auth/logOut',async() =>{
@@ -47,19 +44,19 @@ export const logOutThunk = createAsyncThunk('auth/logOut',async() =>{
 })
 
 export const currentUser = createAsyncThunk('auth/current', async(_, thunkAPI)=>{
-const state = thunkAPI.getState()
-const persToken = state.auth.token;
+    const state = thunkAPI.getState()
+    const persToken = state.auth.token;
 
-if(persToken === null){
-    return thunkAPI.rejectWithValue('Unable to fetch user');
-}
-
-token.set(persToken);
-    try {
-        const {data} = await axios.get('/users/current')
-        return data
-    } catch (error) {
-        return thunkAPI.rejectWithValue(error.message);
+    if(persToken === null){
+        return thunkAPI.rejectWithValue('Unable to fetch user');
     }
 
-    })
+    token.set(persToken);
+        try {
+            const {data} = await axios.get('/users/current')
+            return data
+        } catch (error) {
+            return thunkAPI.rejectWithValue(error.message);
+        }
+
+})
