@@ -5,7 +5,7 @@ import {
   deleteContactsThunk,
   getAllContactsThunk,
 } from 'store/contactsSlice/operationsContacts';
-import { deleteContacts } from 'store/contactsSlice/contactsSlice';
+import { deleteContacts } from 'store/contactsSlice/contactSlice'; 
 import { selectAuth } from 'store/auth/selectors';
 
 const ContactList = () => {

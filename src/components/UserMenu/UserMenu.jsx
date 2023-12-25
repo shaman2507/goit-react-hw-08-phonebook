@@ -1,5 +1,5 @@
 import React from 'react';
-import logOut from '../../img/logOut.jpg';
+import logOut from '../../img/logOut.png';
 import css from '../Header/Header.module.css';
 import { ButtonBase } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';

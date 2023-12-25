@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import css from './SignUp.module.css';
+import css from './SignUpForm.module.css';
 import { Button, FormControl, Input, InputLabel } from '@mui/material';
 import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
