@@ -20,7 +20,6 @@ export const App = () => {
     token && dispatch(currentUser());
   }, [dispatch, token]);
 
-
   return (
     <div>
       <ToastContainer autoClose={2300} />
