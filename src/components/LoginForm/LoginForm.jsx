@@ -22,8 +22,8 @@ const LoginForm = ({ login }) => {
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(loginThunk({ email, password })).unwrap()
-    .then(() => navigate('/contacts')).then(()=>toast.success('successful registration'))
-    .catch(()=>toast.error('ddddd'))
+    .then(() => navigate('/contacts')).then(()=>toast.success('successful'))
+    .catch(() => toast.error('wrong email or password'))
     if (email === '' || password === '') {
       return;
     }

@@ -4,7 +4,7 @@ import { selectAuth } from "store/auth/selectors"
 
 const PrivateRoad = ({
     children}) =>{
-        const isAuth = useSelector(selectAuth)
+    const isAuth = useSelector(selectAuth);
         return isAuth ? children : <Navigate to='/login'/>
     }
     
