@@ -28,7 +28,7 @@ export const loginThunk = createAsyncThunk('auth/logined', async body => {
         token.set(data.token);
         return data;
     } catch (error) {
-        return thunkAPI.rejectWithValue(error.message);
+        return error;
     }
 });
 
