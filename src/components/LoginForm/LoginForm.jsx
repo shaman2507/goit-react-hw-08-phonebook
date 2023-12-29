@@ -22,7 +22,7 @@ const LoginForm = ({ login }) => {
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(loginThunk({ email, password })).unwrap()
-    .then(() => navigate('/contacts')).then(()=>toast.success('successful'))
+    .then(() => navigate('/contacts')).then(()=>toast.success('Welcome back!'))
     .catch(() => toast.error('wrong email or password'))
     if (email === '' || password === '') {
       return;

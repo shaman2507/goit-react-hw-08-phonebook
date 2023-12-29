@@ -30,7 +30,7 @@ const contactsSlice = createSlice({
                 state.contacts = payload;
             })
             .addCase(getAllContactsThunk.rejected, (state, action) => {
-                state.isLoading = true;
+                state.isLoading = false;
                 state.error = action.error.message;
             })
             .addCase(createContactsThunk.pending, state => {
