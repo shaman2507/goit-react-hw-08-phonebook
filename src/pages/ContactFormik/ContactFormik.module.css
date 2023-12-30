@@ -1,0 +1,26 @@
+.contactFormik {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+.formikPhoneBook {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.phoneBookTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsTitle {
+    display: flex;
+    justify-content: center;
+}

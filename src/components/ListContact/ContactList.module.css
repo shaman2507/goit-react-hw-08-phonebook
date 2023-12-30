@@ -9,6 +9,12 @@
     margin-left: 10px;
 }
 
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .itemList {
     padding: 10px;
     display: flex;

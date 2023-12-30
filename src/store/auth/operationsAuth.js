@@ -22,13 +22,13 @@ export const registerThunk = createAsyncThunk('auth/signUp', async body => {
     }
 });
 
-export const loginThunk = createAsyncThunk('auth/logined', async body => {
+export const loginThunk = createAsyncThunk('auth/logined', async (body, thunkAPI) => {
     try {
         const { data } = await axios.post('/users/login', body)
         token.set(data.token);
         return data;
     } catch (error) {
-        return error;
+        return thunkAPI.rejectWithValue(error.message);;
     }
 });
 

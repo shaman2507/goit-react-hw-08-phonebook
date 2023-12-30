@@ -10,9 +10,10 @@ const UserMenu = () => {
   const dispatch = useDispatch();
   return (
     <div className={css.menu}>
-      <p className={css.mail}>{name}</p>
+      <p className={css.name}>{name}</p>
       <ButtonBase variant="outlined" onClick={() => dispatch(logOutThunk())}>
         <img
+          className={css.logOutImg}
           src={logOut}
           alt="Logout"
           width="60"

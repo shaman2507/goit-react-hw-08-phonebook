@@ -8,11 +8,13 @@ const Navig = () => {
     
   return (
     <div className={css.login}>
-          <Button sx={{
-         mr:5,
-        }} variant="contained"   color="success" onClick={() => navigate('./register')}>SignUp</Button>
+          <Button className={css.loginReg} sx={{
+              mr:5,
+            }} variant="contained" color="success" onClick={() => navigate('./register')}>
+            SignUp
+          </Button>
           
-          <ButtonBase variant="outlined" onClick={() => navigate('./login')}>
+          <ButtonBase className={css.loginImg} variant="outlined" onClick={() => navigate('./login')}>
             <img
               className={css.img}
               src={log}

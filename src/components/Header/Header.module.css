@@ -12,6 +12,18 @@
     display: block;
 }
 
+.loginImg:hover,
+.loginImg:focus {
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.loginReg:hover,
+.loginReg:focus {
+    transform: scale(1.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -29,17 +41,31 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.logOutImg {
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.logOutImg:hover,
+.logOutImg:focus {
+    transform: scale(1.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .menu {
     display: flex;
     align-items: center;
-    background-color: rgba(220, 220, 17, 0.9);
+    background-color: rgba(244, 236, 6, 0.9);
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: blue;
 }
 
-.mail {
+
+
+.name {
+    margin-left: 10px;
     margin-right: 10px;
     font-weight: bold;
 }

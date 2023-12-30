@@ -4,7 +4,7 @@ import SignUp from '../pages/SignUp';
 import Login from '../pages/Login';
 import { ToastContainer } from 'react-toastify';
 import { Route, Routes } from 'react-router';
-import ContactFormik from '../pages/ContactFormik';
+import ContactFormik from '../pages/ContactFormik/ContactFormik';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { currentUser } from 'store/auth/operationsAuth';
