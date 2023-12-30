@@ -10,9 +10,9 @@ const Filter = () => {
   };
 
   return (
-    <div className={css.input}>
+    <div >
       <label>Find contacts by name </label>
-      <input type="text" name="filter" onChange={handleChangeFilter} />
+      <input className={css.input} type="text" name="filter" onChange={handleChangeFilter} />
     </div>
   );
 };

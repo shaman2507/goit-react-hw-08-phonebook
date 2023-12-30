@@ -1,6 +1,16 @@
 .input {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border: none;
+    width: 300px;
+    border: solid 1px rgb(62, 131, 108);
+    border-radius: 4px;
+    padding: 6px;
+    
+}
+
+.input:hover,
+.input:focus {
+    transform: scale(1.01);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-color: blue;
 }
