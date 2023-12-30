@@ -36,6 +36,7 @@ const LoginForm = ({ login }) => {
     <div>
       <form className={css.form} onSubmit={handleSubmit}>
         <TextField
+          className={css.field}
           label="Email"
           variant="filled"
           id="email"
@@ -47,6 +48,7 @@ const LoginForm = ({ login }) => {
           required
         />
         <TextField
+          className={css.field}
           label="Password"
           variant="filled"
           id="password"
@@ -57,7 +59,7 @@ const LoginForm = ({ login }) => {
           focused
           required
         />
-        <Button variant="contained" color="success" type="submit" >
+        <Button className={css.btn} variant="contained" color="success" type="submit" >
           submit
         </Button>
       </form>
