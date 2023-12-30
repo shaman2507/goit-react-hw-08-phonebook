@@ -24,9 +24,14 @@ const Header = () => {
               height="60"
             />
           </ButtonBase>
-          <Button variant="contained" color="success"  type="submit"   onClick={() => navigate('./contacts')}>
-           contacts
-          </Button>
+          {isLoged ? <Button
+              variant="contained"
+              color="success"
+              type="submit"
+              onClick={() => navigate('./contacts')}>
+              contacts
+            </Button> : <Button display="none"/>
+          }
           
         </div>
         {isLoged ?  <UserMenu /> : <Navig/>} 
