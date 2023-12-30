@@ -11,6 +11,7 @@ import { currentUser } from 'store/auth/operationsAuth';
 import PrivateRoad from '../PrivateRoad/PrivateRoad';
 import PublicRoad from '../PublicRoad/PublicRoad';
 import { selectAuth } from 'store/auth/selectors';
+import NotFoundPage from 'pages/NotFoundPage';
 
 
 export const App = () => {
@@ -50,7 +51,7 @@ export const App = () => {
               </PublicRoad>
             }
           />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </div>
