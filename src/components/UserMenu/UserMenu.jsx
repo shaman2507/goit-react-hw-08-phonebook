@@ -6,11 +6,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import authSelectors from 'store/auth/selectors';
 import { logOutThunk } from 'store/auth/operationsAuth';
 const UserMenu = () => {
-  const mail = useSelector(authSelectors.selectUser);
+  const name = useSelector(authSelectors.selectUser);
   const dispatch = useDispatch();
   return (
     <div className={css.menu}>
-      <p className={css.mail}>{mail}</p>
+      <p className={css.mail}>{name}</p>
       <ButtonBase variant="outlined" onClick={() => dispatch(logOutThunk())}>
         <img
           src={logOut}

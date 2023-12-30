@@ -25,6 +25,7 @@ const Header = () => {
             />
           </ButtonBase>
           {isLoged ? <Button
+              className={css.contbtn}
               variant="contained"
               color="success"
               type="submit"
